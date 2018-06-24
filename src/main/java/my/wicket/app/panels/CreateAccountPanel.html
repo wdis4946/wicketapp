@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html xmlns:wicket="http://wicket.apache.org">
+<head>
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css"
+	integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm"
+	crossorigin="anonymous">
+<link rel="stylesheet" type="text/css" href="css/common.css" />
+</head>
+<title>CreateAccountPanel</title>
+<body>
+	<wicket:panel>
+		<form class="my-form-sign-in-up" wicket:id="createAccountForm">
+			<h1 class="h3 mb-3 font-weight-normal text-center">Create your personal account</h1>
+			<div class="form-group">
+				<label for="name">Username</label>
+				<input class="form-control" type="text" name="name" wicket:id="name" />
+				<div wicket:id="nameFeedbackPanel"></div>
+				<small id="emailHelp" class="form-text text-muted"> This will be your username. You can
+					add the name of your organization later. </small>
+			</div>
+
+			<div class="form-group">
+				<label for="email">Email address</label>
+				<input class="form-control" type="text" name="email" wicket:id="email" />
+				<div wicket:id="emailFeedbackPanel"></div>
+				<small id="emailHelp" class="form-text text-muted"> We'll occasionally send updates
+					about your account to this inbox. We'll never share your email address with anyone. </small>
+			</div>
+
+			<div class="form-group">
+				<label for="password">Password</label>
+				<input class="form-control" type="password" wicket:id="password" />
+				<div wicket:id="passwordFeedbackPanel"></div>
+				<small id="passwordHelp" class="form-text text-muted"> Use at least one lowercase
+					letter, one numeral, and seven characters. </small>
+			</div>
+
+			<div class="form-group">
+				<div class="form-check">
+					<input class="form-check-input" type="checkbox" value="" id="defaultCheck1" wicket:id="agree">
+					<label class="form-check-label" for="defaultCheck1">I agree to Wicket-App's</label>
+					<a href="#" wicket:id="terms">Terms of Service</a>.
+				</div>
+			</div>
+			<div wicket:id="termsModal"></div>
+
+			<input class="btn btn-success" type="submit" wicket:id="submit" value="Create an Account" />
+		</form>
+	</wicket:panel>
+</body>
+<script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"
+	integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN"
+	crossorigin="anonymous"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"
+	integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q"
+	crossorigin="anonymous"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"
+	integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl"
+	crossorigin="anonymous"></script>
+</html>

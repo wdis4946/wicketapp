@@ -1,0 +1,16 @@
+<?xml version="1.0"?>
+<!DOCTYPE hibernate-mapping PUBLIC "-//Hibernate/Hibernate Mapping DTD//EN"
+"http://hibernate.sourceforge.net/hibernate-mapping-3.0.dtd">
+<hibernate-mapping>
+	<class name="my.wicket.app.bean.Account" table="account" lazy="false">
+		<id name="accountId" type="integer" column="account_id">
+			<generator class="native" />
+		</id>
+		<property name="name" />
+		<property name="email" />
+		<property name="password" />
+	</class>
+	<query name="findByEmail">
+		<![CDATA[from my.wicket.app.bean.Account as account where email = :email]]>
+	</query>
+</hibernate-mapping>

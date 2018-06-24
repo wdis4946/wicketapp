@@ -1,0 +1,30 @@
+.my-body-pt{
+	padding-top: 7rem;
+}
+
+.my-invalid-feedback {
+	width: 100%;
+	margin-top: .5rem;
+	font-size: 80%;
+	color: #dc3545;
+}
+
+.my-inline {
+	display: inline;
+}
+
+.w_caption, div.w_top_1, div.w_topLeft, div.w_topRight, div.w_bottom_1 {
+   display: none;
+}
+
+div.w_left, div.w_right
+, div.wicket-modal div.w_content_1
+, div.wicket-modal div.w_right_1
+, div.wicket-modal div.w_left_1
+, div.w_content_1, div.w_content_2, div.w_content_3 {
+   margin: 0;
+   background-image: none;
+   _background-image: none;
+   border: none:
+   display: none;
+}
