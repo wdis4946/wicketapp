@@ -27,20 +27,14 @@ import my.wicket.app.validators.PasswordValidator;
 
 public class CreateAccountPanel extends Panel {
 
-	/**
-	 * Services
-	 */
+	/* Services */
 	@Inject
 	ISignUpService signUpService;
 
-	/**
-	 * Entities
-	 */
+	/* Entities */
 	private Account account = new Account();
 
-	/**
-	 * Wicket Components
-	 */
+	/* Wicket Components */
 	private RequiredTextField<String> name;
 	private RequiredTextField<String> email;
 	private PasswordTextField password;
